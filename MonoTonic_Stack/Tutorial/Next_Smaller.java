@@ -20,7 +20,7 @@ public class Next_Smaller {
 
             while(!st.isEmpty() && a[st.peek()] > a[i]){
                 int stackTop = st.pop();
-                nextSmaller[stackTop] = a[i];
+                nextSmaller[stackTop] = i;
 
             }
             st.push(i);

@@ -19,6 +19,9 @@ public class Next_Greater_Element {
     public static int[]call(int[]a){
         int[]temp = new int[a.length];
         int n = a.length;
+        for(int i = 0 ; i<a.length; i++){
+            temp[i] = a[i];
+        }
 
         Stack<Integer> st = new Stack<>();
         for(int i = a.length-1; i>=0; i--){
@@ -29,10 +32,10 @@ public class Next_Greater_Element {
             }
 
            if(i < a.length){
-               if(st.isEmpty()){
-                   temp[i%n] = -1;
+               if(!st.isEmpty()){
+                   temp[i%n] = a[st.peek()];
                }
-               else temp[i%n] = a[st.peek()];
+
            }
             st.push(i%n);
 

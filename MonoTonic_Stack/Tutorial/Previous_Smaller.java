@@ -20,7 +20,7 @@ public class Previous_Smaller {
                 st.pop();
             }
             if(!st.isEmpty()){
-                previous_smaller[i] = a[st.peek()];
+                previous_smaller[i] = st.peek();
             }
             st.push(i);
         }

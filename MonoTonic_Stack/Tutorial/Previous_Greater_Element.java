@@ -5,7 +5,8 @@ import java.util.Stack;
 
 public class Previous_Greater_Element {
     public static void main(String[] args) {
-        int[]a = {13, 8, 1, 5, 2, 5, 9, 7, 6, 14};
+        // int[]a = {13, 8, 1, 5, 2, 5, 9, 7, 6, 14};
+        int[]a ={1,1,1,1};
         int[]temp = findPreviousGreaterIndexes(a);
         System.out.println(Arrays.toString(a));
         for(int i =0 ;  i<a.length; i++){
