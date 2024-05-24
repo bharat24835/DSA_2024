@@ -59,7 +59,7 @@ public class Longest_Common_Substring {
         System.out.println("Max[0] : "  + max[0] + " and Max[1] : " + max[1]);
         int i  = max[0];
         int j = max[1];
-        // printing of
+        // printing of Longest Common Substring
         String s  = "";
 
         while(i < n && j < m){
